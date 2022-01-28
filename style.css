@@ -1,0 +1,206 @@
+:root {
+  --color-title: #d4ccb6;
+  --green: #41a55b;
+  --dark-green: #017721;
+  --gray-container: #24221f;
+  --gray-light: #4e4d4d;
+  --input-gray: #2f2f2f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #191816;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+}
+
+.main {
+  display: flex;
+}
+
+.logo {
+  padding: 40px;
+}
+
+.container {
+  margin: 126px 100px;
+  width: 572px;
+  height: 512px;
+  position: relative;
+  background-color: var(--gray-container);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.side > img {
+  margin-left: 57px;
+  margin-top: -250px;
+  max-width: 860px;
+}
+
+.sign-in-form {
+  width: 573px;
+  height: 512px;
+  margin: 55px 118px;
+}
+
+h1,
+.input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  display: flex;
+}
+
+h1 > img {
+  margin-right: 5px;
+}
+
+h1,
+h2 {
+  color: var(--color-title);
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-weight: normal;
+  width: 344px;
+  margin: 5px 0px 20px;
+  font-size: 16px;
+}
+
+h3,
+.remind {
+  color: #afb6c2;
+  transition: 0.5s;
+}
+
+.input {
+  width: 345px;
+  height: 44px;
+  margin-bottom: 20px;
+  background-color: var(--input-gray);
+  color: #fff;
+  border: 2px solid var(--gray-light);
+  border-radius: 5px;
+  transition: 0.2s;
+  padding-left: 40px;
+  font-size: 12px;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+input:hover {
+  border-color: var(--green);
+}
+
+input:focus {
+  outline: none !important;
+  border-color: var(--green);
+}
+
+.input-field i {
+  color: #fff;
+  width: 14px;
+  line-height: 14px;
+}
+
+.remind:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#forget {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#register {
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--green);
+}
+
+#password {
+  background-image: url('./images/lock.svg');
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+}
+
+#mail {
+  background-image: url('./images/mail.svg');
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+}
+
+#mail:focus {
+  background-image: url('./images/mail-focus.svg');
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+}
+
+#password:focus {
+  background-image: url('./images/lock-focus.svg');
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+}
+
+a,
+p,
+.text {
+  color: var(--green);
+  transition: 0.5s;
+}
+
+.text:hover {
+  color: var(--dark-green);
+  cursor: pointer;
+}
+
+.checkbox-form {
+  align-items: space-between;
+}
+
+.checkbox-form > a {
+  margin: 75px;
+}
+
+.btn-form > p {
+  margin-top: 5px;
+  margin-left: 55px;
+}
+
+.btn {
+  color: #03310d;
+  background-color: var(--green);
+  width: 344px;
+  height: 51px;
+  padding: 12px;
+  border: 2px solid var(--dark-green);
+  border-radius: 5px;
+  text-transform: uppercase; /*letras em maiusculo*/
+  font-weight: 800;
+  font-size: 16px;
+  margin: 10px 0;
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--dark-green);
+  border: none;
+}
