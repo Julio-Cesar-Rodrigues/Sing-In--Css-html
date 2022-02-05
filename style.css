@@ -13,23 +13,22 @@
   box-sizing: border-box;
 }
 
+main {
+  width: 50%;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #191816;
   align-items: center;
   justify-content: center;
-  min-width: 100vh;
-}
-
-.main {
-  display: flex;
 }
 
 .logo {
   padding: 40px;
 }
 
-.container {
+main {
   margin: 126px 100px;
   width: 572px;
   height: 512px;
@@ -40,9 +39,8 @@ body {
 }
 
 .side > img {
-  margin-left: 57px;
-  margin-top: -250px;
-  max-width: 860px;
+  max-width: 765px;
+  float: right;
 }
 
 .sign-in-form {
@@ -63,12 +61,11 @@ h1 > img {
 }
 
 h1,
-h2 {
+label {
   color: var(--color-title);
-  margin-bottom: 5px;
 }
 
-h2 {
+section label {
   font-size: 16px;
 }
 
@@ -88,7 +85,7 @@ h3,
 .input {
   width: 345px;
   height: 44px;
-  margin-bottom: 20px;
+  margin: 5px 0 20px;
   background-color: var(--input-gray);
   color: #fff;
   border: 2px solid var(--gray-light);
@@ -135,6 +132,7 @@ input[type='checkbox']:before {
   border-radius: 2px;
   transition: 0.5s;
 }
+
 input[type='checkbox']:checked:before {
   content: '';
   display: block;
@@ -183,10 +181,17 @@ input[type='checkbox']:checked:after {
   color: var(--green);
 }
 
-#password {
+#pass {
   background-image: url('./images/lock.svg');
   background-repeat: no-repeat;
   background-position: 10px 8px;
+}
+
+.eye {
+  margin: 10px 0 0 0;
+  cursor: pointer;
+  left: 410px;
+  position: absolute;
 }
 
 #mail {
