@@ -15,64 +15,65 @@
     />
   </head>
   <body>
-    <div>
-      <img class="logo" src="./images/logo.svg" />
-    </div>
-
-    <div class="main">
-      <div class="container">
-        <div class="form-container">
-          <form action="#" class="sign-in-form">
-            <h1 class="title">
-              <img class="log" src="images/log-in.svg" />
-              Faça seu login
-            </h1>
-
-            <h3>Entre com suas informações de cadastro.</h3>
-
-            <div>
-              <h2>E-mail</h2>
-              <div class="inputWithIcon">
-                <input
-                  type="text"
-                  placeholder="Digite seu email"
-                  class="input"
-                  id="mail"
-                />
-              </div>
-            </div>
-
-            <div>
-              <h2>Senha</h2>
-              <div class="password-field">
-                <input
-                  type="password"
-                  placeholder="Digite sua senha"
-                  class="input"
-                  id="password"
-                />
-              </div>
-            </div>
-
-            <div class="checkbox-form">
-              <input type="checkbox" id="remind" name="lembrar-me" />
-              <label for="remind" class="remind">Lembre-me</label>
-              <span></span>
-              <strong>Esqueci minha senha</strong>
-            </div>
-
-            <div class="btn-form">
-              <input type="submit" class="btn" value="Entrar" />
-              <p id="register">
-                Não tem uma conta? <strong>Registre-se</strong>
-              </p>
-            </div>
-          </form>
-        </div>
-      </div>
+    <header>
       <div class="side">
         <img class="img" src="images/side-image-2x.jpg" />
       </div>
-    </div>
+      <img class="logo" src="./images/logo.svg" />
+    </header>
+
+    <main>
+      <div class="form-container">
+        <form action="#" class="sign-in-form">
+          <h1 class="title">
+            <img class="log" src="images/log-in.svg" />
+            Faça seu login
+          </h1>
+
+          <h3>Entre com suas informações de cadastro.</h3>
+
+          <section>
+            <label>E-mail</label>
+            <div class="inputWithIcon">
+              <input
+                type="text"
+                placeholder="Digite seu email"
+                class="input"
+                required
+                id="mail"
+              />
+            </div>
+          </section>
+
+          <section>
+            <label>Senha</label>
+            <div class="password-field">
+              <img src="images/eye.svg" id="eye" class="eye" />
+              <input
+                type="password"
+                placeholder="Digite sua senha"
+                class="input"
+                required
+                id="pass"
+              />
+            </div>
+          </section>
+
+          <section class="checkbox-form">
+            <input type="checkbox" id="remind" name="lembrar-me" />
+            <label for="remind" class="remind">Lembre-me</label>
+
+            <strong>Esqueci minha senha</strong>
+          </section>
+
+          <div class="btn-form">
+            <input type="submit" class="btn" value="Entrar" />
+            <p id="register">Não tem uma conta? <strong>Registre-se</strong></p>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="./script.js" />
   </body>
 </html>
